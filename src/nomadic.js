@@ -1,5 +1,5 @@
 const nomadic = document.createElement('div');
-nomadic.classList.add = 'page';
+nomadic.classList.add('page');
 for(let i = 0; i < 7; i++) {
     const item = document.createElement('div');
     item.classList.add = `item-${i+1}`;

@@ -1,6 +1,6 @@
 const twins = document.createElement('div');
-twins.classList.add = 'page';
-for(let i = 0; i < 3; i++) {
+twins.classList.add('page');
+for(let i = 0; i < 14; i++) {
     const item = document.createElement('div');
     item.classList.add = `item-${i+1}`;
     item.textContent = `item-${i+1}`;

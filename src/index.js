@@ -1,16 +1,13 @@
 import "./styles.css"
-import {grace} from "./grace.js"
-import {kalé} from "./kalé.js"
-import {nomadic} from "./nomadic.js"
-import {twins} from "./twins.js"
-
-console.log("hello");
+import { kalé } from "./kalé.js"
+import { nomadic } from "./nomadic.js"
+import { twins } from "./twins.js"
+import { order } from "./order.js"
 
 const content = document.querySelector('#content');
-console.log(grace)
-console.log(typeof grace);
-content.appendChild(grace);
 const buttons = document.querySelectorAll('button');
+
+content.appendChild(kalé);
 
 buttons.forEach((btn) => {
     btn.addEventListener('click', (e) => clickHandlerCell(e, btn));
@@ -24,16 +21,17 @@ function clickHandlerCell(e, btn) {
     })
     btn.classList.remove('btn-69');
     btn.classList.add('gold-button', 'shine-button');
-    if(btn.id === "grace") {
-        content.appendChild(grace);
-    }
-    else if(btn.id === "nomadic") {
-        content.appendChild(nomadic);
-    }
-    else if(btn.id === "twins") {
-        content.appendChild(twins);
-    }
-    else {
-        content.appendChild(kalé);
+    switch(btn.id) {
+        case "nomadic":
+            content.appendChild(nomadic);
+            break;
+        case "twins":
+            content.appendChild(twins);
+            break;
+        case "order":
+            content.appendChild(order);
+            break;
+        default:
+            content.appendChild(kalé);
     }
 }

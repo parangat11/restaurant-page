@@ -1,5 +1,5 @@
 const kalé = document.createElement('div');
-kalé.classList.add = 'page';
+kalé.classList.add('page');
 for(let i = 0; i < 12; i++) {
     const item = document.createElement('div');
     item.classList.add = `item-${i+1}`;
