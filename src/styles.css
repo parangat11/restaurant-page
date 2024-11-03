@@ -1,3 +1,8 @@
+@font-face {
+  font-family: titleFont;
+  src: url(./vinque\ rg.otf);
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -13,9 +18,11 @@ header nav {
 }
 
 #title {
-    font-size: 2.3rem;
+    font-size: 2.5rem;
     margin-top: 20px;
     margin-bottom: 10px;
+    color: rgba(120, 50, 5, 0.8);
+    font-family: titleFont;
 }
 
 header ul {
@@ -72,6 +79,7 @@ header ul {
                 0 3px 6px rgba(110, 80, 20, 0.4),
                 inset 0 -2px 5px 1px #b17d10,
                 inset 0 -1px 1px 3px rgba(250, 227, 133, 1);
+    border: 0;
 }
 
 .btn-69:disabled {
@@ -156,7 +164,7 @@ div#content > div {
 }
 
 div#content > div > div {
-  background-color: blue;
+  background-color: gold;
   padding: 20px;
   text-align: center;
 }
